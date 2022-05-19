@@ -1,0 +1,222 @@
+/*цвет основного текста #757575 */
+/*вторичный цвет текста #212121 */
+/*белый цвет #FFFFFF */
+/*цвет акцента #2196F3 */
+/* светлый цвет фона #E5E5E5 */
+/* темный цвет фона #2F303A */
+/* вторичный цвет фона #F5F4FA */
+
+/* Common styles */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --accent-btn-color: #188ce8;
+  --primary-white-color: #ffffff;
+  --dark-background: #2f303a;
+  --secondary-background: #f5f4fa;
+  --rgba-grey: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background: var(--primary-white-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+/* Семантичне приховування елементів */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* Logo */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo .web {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.contacts-nav .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent-color);
+}
+/* Шапка */
+.head {
+  background: var(--dark-background);
+}
+.head-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-btn-color);
+}
+
+/* Features */
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature-list .features-p {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Functions */
+.functions .title {
+  color: var(--title-text-color);
+}
+.functions .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Our team */
+.team {
+  color: var(--title-text-color);
+  background: var(--secondary-background);
+}
+.team .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.title-people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+}
+.p-item {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-background);
+}
+.logo .studio {
+  color: var(--primary-white-color);
+}
+.add {
+  color: var(--primary-white-color);
+}
+.address .link {
+  font-style: normal;
+  text-decoration: none;
+}
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+.btn-filters {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.btn-filters:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.title-project {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.project-p {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+}
+.project-examples-li {
+  text-decoration: none;
+}
