@@ -44,6 +44,7 @@ h5,
 h6,
 p,
 ul {
+  padding: 0;
   margin: 0;
 }
 .list {
@@ -58,7 +59,8 @@ ul {
 }
 .container {
   /* outline: 1px solid red; */
-  width: 1200px;
+  width: 1170px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -109,11 +111,14 @@ ul {
 .header-box {
   display: flex;
   align-items: center;
+}
+.link-item .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .nav-header {
   display: flex;
+  align-items: center;
 }
 
 /* Logo */
@@ -169,6 +174,8 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
@@ -180,10 +187,11 @@ ul {
 /* Шапка */
 .hero {
   background: var(--dark-background);
-}
-.hero-box {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.hero-box {
+  padding: 0 15px;
 }
 .head-title {
   color: var(--primary-white-color);
@@ -217,10 +225,11 @@ ul {
 }
 
 /* Features */
-.features-box {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .feature-item-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -242,14 +251,14 @@ ul {
 }
 
 /* Functions */
-.feature-item-desc {
+.functions {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .function-item-img {
   display: block;
 }
-.functions-box {
-  padding-bottom: 94px;
-}
+
 .functions-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -262,7 +271,7 @@ ul {
   --items: 3;
 }
 /* Our team */
-.team-box {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -280,6 +289,14 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
+.team-list-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .title-people {
   font-weight: 500;
   font-size: 16px;
@@ -296,7 +313,6 @@ ul {
 }
 .team-list-img {
   display: block;
-  margin-bottom: 30px;
 }
 
 /* Footer */
@@ -305,9 +321,10 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-box {
-  padding-bottom: 20px;
+.footer .logo {
+  margin-bottom: 20px;
 }
+
 .logo .studio {
   color: var(--primary-white-color);
 }
@@ -398,7 +415,10 @@ ul {
   text-decoration: none;
 }
 .project-examples-desc {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   border-right: 1px solid var(--border-color-project);
   border-bottom: 1px solid var(--border-color-project);
   border-left: 1px solid var(--border-color-project);
